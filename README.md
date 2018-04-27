@@ -33,6 +33,11 @@ Don't put PHI/PII on a remote server.  I don't know the policy for ACCRE or AWS,
 * nohup
 * at now
 
+### Windows Users
+
+* putty
+* winscp
+
 ## A Prime Example
 
 If your search for infinite many prime numbers is divided by infinite many processors, you'll find them infinitely faster, right?
