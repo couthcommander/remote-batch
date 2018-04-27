@@ -49,3 +49,21 @@ If your search for infinite many prime numbers is divided by infinite many proce
 <tr><td rowspan='2'>Scenario 3<br/>x95-x100</td><td>0</td><td>0.9</td><td>0.1</td><td rowspan='2'>21</td></tr>
 <tr><td>1</td><td>0.3</td><td>0.7</td></tr>
 </table>
+
+## tmux (replacment for screen)
+
+Start a job within a tmux session, detach, and log off.  Come back later and attach the session.
+
+* tmux ls
+
+### Outside of a session
+
+* tmux new
+* tmux attach-session -t 1
+
+### Inside of a session
+
+* exit
+* ctrl+b, [command]
+* ctrl+b, d (detach)
+* ctrl+b, s (select session)
