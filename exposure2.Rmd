@@ -17,7 +17,7 @@ if(Sys.info()['nodename'] == 'statcomp2') {
     wd <- file.path('~','example')
     dat <- file.path(wd, 'exp-data-big.Rdata')
 } else {
-    wd <- file.path('projects','r_workshops','remote-batch')
+    wd <- file.path('~','projects','r_workshops','remote-batch')
     dat <- file.path(wd, 'exp-data-small.Rdata')
 }
 load(dat)
