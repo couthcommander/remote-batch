@@ -37,11 +37,13 @@ Don't put PHI/PII on a remote server.  I don't know the policy for ACCRE or AWS,
 
 If your search for infinite many prime numbers is divided by infinite many processors, you'll find them infinitely faster, right?
 
-script|things you'll learn
-primes1.R|normal script
-primes2.R|command-line arguments
-primes3.R|save output
-runBatch.sh|multi-tasking and redirecting output
+<table>
+<tr><td>script</td><td>things you'll learn</td></tr>
+<tr><td>primes1.R</td><td>normal script</td></tr>
+<tr><td>primes2.R</td><td>command-line arguments</td></tr>
+<tr><td>primes3.R</td><td>save output</td></tr>
+<tr><td>runBatch.sh</td><td>multi-tasking and redirecting output</td></tr>
+</table>
 
 ## A Simulating Example
 
@@ -56,12 +58,14 @@ runBatch.sh|multi-tasking and redirecting output
 <tr><td>1</td><td>0.3</td><td>0.7</td></tr>
 </table>
 
-script|things you'll learn
-exposure1.Rnw|normal script
-runKnit.sh|convenience script to knit
-gendata.R|isolate data manipulation
-exposure2.Rmd|code branching
-run.R|convenience script to knit
+<table>
+<tr><td>script</td><td>things you'll learn</td></tr>
+<tr><td>exposure1.Rnw</td><td>normal script</td></tr>
+<tr><td>runKnit.sh</td><td>convenience script to knit</td></tr>
+<tr><td>gendata.R</td><td>isolate data manipulation</td></tr>
+<tr><td>exposure2.Rmd</td><td>code branching</td></tr>
+<tr><td>run.R</td><td>convenience script to knit</td></tr>
+</table>
 
 ## tmux (replacment for screen)
 
