@@ -1,0 +1,54 @@
+---
+title: "A Simulation Example"
+author: "Cole Beck"
+date: "`r format(Sys.Date())`"
+output:
+  pdf_document:
+    keep_tex: TRUE
+  html_document:
+    keep_md: TRUE
+---
+
+```{r include = FALSE}
+if(Sys.info()['user'] != 'beckca') {
+    stop('wait, do you have permission to use this code?!?')
+}
+if(Sys.info()['nodename'] == 'statcomp2') {
+    wd <- file.path('~','example')
+    dat <- file.path(wd, 'exp-data-big.Rdata')
+} else {
+    wd <- file.path('projects','r_workshops','remote-batch')
+    dat <- file.path(wd, 'exp-data-small.Rdata')
+}
+load(dat)
+```
+
+## Work
+
+Here's the work:
+
+```{r}
+cols <- grep('^x', names(df), value = TRUE)
+lab <- c("Estimate", "Std. Error", "t value", "Pr(>|t|)")
+est <- matrix(0, length(cols), 4, dimnames = list(cols, lab))
+for(i in seq_along(cols)) {
+    f <- sprintf('%s ~ exposure + age + race + gender', cols[i])
+    f.glm <-  glm(as.formula(f), data = df, family = quasibinomial())
+    est[i,] <- coef(summary(f.glm))['exposure',]
+}
+```
+
+## Results
+
+```{r echo = FALSE, results = 'asis'}
+knitr::kable(est[est[,1] > 2, 1:2])
+```
+
+## Appendix
+
+Here's the system info:
+
+```{r echo = FALSE, results = 'asis'}
+fun <- ifelse(knitr::is_latex_output(), toLatex, print)
+do.call(fun, list(sessionInfo(), locale = FALSE))
+```
