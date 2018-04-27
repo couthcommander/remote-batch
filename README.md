@@ -37,6 +37,12 @@ Don't put PHI/PII on a remote server.  I don't know the policy for ACCRE or AWS,
 
 If your search for infinite many prime numbers is divided by infinite many processors, you'll find them infinitely faster, right?
 
+script|things you'll learn
+primes1.R|normal script
+primes2.R|command-line arguments
+primes3.R|save output
+runBatch.sh|multi-tasking and redirecting output
+
 ## A Simulating Example
 
 <table>
@@ -49,6 +55,13 @@ If your search for infinite many prime numbers is divided by infinite many proce
 <tr><td rowspan='2'>Scenario 3<br/>x95-x100</td><td>0</td><td>0.9</td><td>0.1</td><td rowspan='2'>21</td></tr>
 <tr><td>1</td><td>0.3</td><td>0.7</td></tr>
 </table>
+
+script|things you'll learn
+exposure1.Rnw|normal script
+runKnit.sh|convenience script to knit
+gendata.R|isolate data manipulation
+exposure2.Rmd|code branching
+run.R|convenience script to knit
 
 ## tmux (replacment for screen)
 
