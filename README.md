@@ -17,7 +17,7 @@ Don't put PHI/PII on a remote server.  I don't know the policy for ACCRE or AWS,
 
 * ssh
 
-<spoiler>-o ServerAliveInterval=240</spoiler>
+&lt;spoiler>-o ServerAliveInterval=240&lt;/spoiler>
 
 * ssh-keygen
 * ssh-add
