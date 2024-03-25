@@ -28,7 +28,7 @@ Don't put PHI/PII on a remote server.  I don't know the policy for ACCRE or AWS,
 * top
 * `ps aux | grep run.R`
 
-[Wiki FAQ](http://biostat.mc.vanderbilt.edu/wiki/Main/FrequentlyAskedQuestionsFAQ#How_do_I_run_my_R_program_as_a_batch_job_63)
+[Wiki FAQ](https://biostat.app.vumc.org/wiki/Main/FrequentlyAskedQuestionsFAQ#How_do_I_run_my_R_program_as_a_batch_job_63)
 
 * nohup
 * at now
